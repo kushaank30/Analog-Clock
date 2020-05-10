@@ -142,3 +142,16 @@ body{
                              
 }
 
+
+@media (max-width: 380px){
+    #month,
+    #day,
+    #date,
+    #year{
+        width: 90px;
+    }
+    .date{
+        min-height: 30vh;
+    }
+
+}
