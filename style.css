@@ -208,10 +208,10 @@ body.light .toggleClass{
 
 body.light .toggleClass:before{
     content: 'Dark Mode';
-    
+
 }
 
-@media (max-width: 380px){
+@media (max-width: 411px){
     #month,
     #day,
     #date,
@@ -220,6 +220,9 @@ body.light .toggleClass:before{
     }
     .date{
         min-height: 30vh;
+    }
+    .toggleClass{
+        right: 110px;
     }
 
 }
