@@ -211,7 +211,7 @@ body.light .toggleClass:before{
 
 }
 
-@media (max-width: 411px){
+@media (max-width: 380px){
     #month,
     #day,
     #date,
