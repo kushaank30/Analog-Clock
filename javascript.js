@@ -57,16 +57,18 @@ Months[10] = "October"
 Months[11] = "November"
 Months[12] = "December"
 
-month.innerHTML = Months[new Date().getMonth() + 1]
-date.innerHTML = new Date().getDate()
-year.innerHTML = new Date().getFullYear()
-day.innerHTML = weekdays[new Date().getDay()]
+setInterval(() => {
+    month.innerHTML = Months[new Date().getMonth() + 1]
+    date.innerHTML = new Date().getDate()
+    year.innerHTML = new Date().getFullYear()
+    day.innerHTML = weekdays[new Date().getDay()]
 
-if(month.innerHTML.toString().length==1){
-    month.innerHTML = "0" + month.innerHTML
-}
+    if(month.innerHTML.toString().length==1){
+        month.innerHTML = "0" + month.innerHTML
+    }
 
-if(date.innerHTML.toString().length==1){
-    date.innerHTML = "0" + date.innerHTML
-}
-
+    if(date.innerHTML.toString().length==1){
+        date.innerHTML = "0" + date.innerHTML
+    }
+    
+})
